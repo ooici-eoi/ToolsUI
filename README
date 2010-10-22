@@ -1,0 +1,110 @@
+This is a NetBeans project for running ToolsUI (Java-NetCDF libraries)
+
+Clone this repository:
+git clone git@github.com:asascience/ToolsUI.git
+
+Initialize the submodules (Java-OPeNDAP and THREDDS)
+git submodule update
+
+Load the three projects into NetBeans:
+netcdf-4.x
+opendap-2.2
+toolsUI-4.x
+
+
+Getting opendap-2.2 to build:
+Edit the opendap-2.2 project properties (right click on project... Properties)
+Under Sources:
+Remove all references and add the following folders (your path to ToolsUI may be different)
+/ToolsUI/Java-OPeNDAP/src/opendap
+
+You should not have to alter the libraries, they are hopefully
+referenced relatively.  If for some reason they are not:
+Under Libraries, and the "Compile" tab, add all JARs in the
+/ToolsUI/Java-OPeNDAP/lib/ folder.
+
+opendap-2.2 should now build correctly!
+
+Getting netcdf-4.x to build:
+
+Download jpeg2000.jar and move it to:
+/ToolsUI/THREDDS/lib/external/
+
+Edit the netcdf-4.x project properties (right click on project... Properties)
+Under Sources:
+Remove all references and add the following folders (your path to ToolsUI may be different)
+/ToolsUI/THREDDS/common/src/java
+/ToolsUI/THREDDS/cdm/src/main/java
+/ToolsUI/THREDDS/cdm/src/main/resources
+
+
+You should not have to alter the libraries, they are hopefully
+referenced relatively.  If for some reason they are not:
+
+Under Libraries, and the "Compile" tab, add the following:
+The opendap-2.2 project
+/ToolsUI/THREDDS/lib/external/commons-httpclient-3.1.jar
+/ToolsUI/THREDDS/lib/external/ehcache-1.6.0.jar
+/ToolsUI/THREDDS/lib/external/jdom.jar
+/ToolsUI/THREDDS/lib/external/je-4.0.71.jar
+/ToolsUI/THREDDS/lib/external/jna.jar
+/ToolsUI/THREDDS/lib/external/protobuf-java-2.1.0.jar
+/ToolsUI/THREDDS/lib/external/slf4j-api-1.5.6.jar
+/ToolsUI/THREDDS/lib/external/stax-api-1.0.1.jar
+/ToolsUI/THREDDS/lib/release/grib-8.0.jar
+/ToolsUI/THREDDS/lib/release/httpclient-4.1.jar
+/ToolsUI/THREDDS/lib/release/httpcore-4.1.jar
+/ToolsUI/THREDDS/lib/release/unidatacommon.jar
+/ToolsUI/THREDDS/lib/release/visadNoDods.jar
+
+On the "Run" tab, add the following:
+
+/ToolsUI/THREDDS/lib/external/commons-codec-1.3.jar
+/ToolsUI/THREDDS/lib/external/commons-logging-1.1.jar
+/ToolsUI/THREDDS/lib/external/jpeg2000.jar
+/ToolsUI/THREDDS/lib/external/slf4j-jdk14-1.5.6.jar
+/ToolsUI/THREDDS/lib/release/bufrTables-2.0.jar
+/ToolsUI/THREDDS/lib/release/unidatacommon.jar
+
+netcdf-4.x should now build correctly!
+
+
+Getting toolsUI-4.x to build:
+
+Edit the toolsUI-4.x project propderties (right click on project... Properties)
+Under Sources:
+Remove all references and add the following folders (your path to ToolsUI may be different)
+/ToolsUI/THREDDS/ui/src/main/java
+/ToolsUI/THREDDS/ui/src/main/resources
+
+You should not have to alter the libraries, they are hopefully
+referenced relatively.  If for some reason they are not:
+
+Under Libraries, and the "Compile" tab, add the following:
+
+The opendap-2.2 project
+The netcdf-4.x project
+/ToolsUI/THREDDS/lib/release/unidatacommon.jar
+/ToolsUI/THREDDS/lib/release/forms-1.0.7.jar
+/ToolsUI/THREDDS/lib/release/httpcore-4.1.jar
+/ToolsUI/THREDDS/lib/release/httpclient-4.1.jar
+/ToolsUI/THREDDS/lib/release/grib-8.0.jar
+/ToolsUI/THREDDS/lib/external/je-4.0.71.jar
+/ToolsUI/THREDDS/lib/external/lucene.jar
+/ToolsUI/THREDDS/lib/external/commons-httpclient-3.1.jar
+/ToolsUI/THREDDS/lib/external/slf4j-api-1.5.6.jar
+/ToolsUI/THREDDS/lib/external/ehcache-1.6.0.jar
+/ToolsUI/THREDDS/lib/external/jcommon-1.0.15.jar
+/ToolsUI/THREDDS/lib/external/jfreechart-1.0.12.jar
+/ToolsUI/THREDDS/lib/external/jakarta-oro-2.0.8.jar
+/ToolsUI/THREDDS/lib/external/bounce-0.14.jar
+/ToolsUI/THREDDS/lib/external/spring-2.5.jar
+/ToolsUI/THREDDS/lib/external/jdom.jar
+
+
+On the "Run" tab, add the following:
+/ToolsUI/THREDDS/lib/external/commons-codec-1.3.jar
+/ToolsUI/THREDDS/lib/external/commons-logging-1.1.jar
+/ToolsUI/THREDDS/lib/external/jpeg2000.jar
+/ToolsUI/THREDDS/lib/external/slf4j-jdk14-1.5.6.jar
+/ToolsUI/THREDDS/lib/release/bufrTables-2.0.jar
