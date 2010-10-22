@@ -7,7 +7,7 @@
             <source-roots>
                 <root id="src.java.dir" name="cdm/src/main/java"/>
                 <root id="src.resources.dir" name="cdm/src/main/resources"/>
-                <root id="src.java2.dir" name="common\src\java"/>
+                <root id="src.java2.dir" name="common/src/java"/>
             </source-roots>
             <test-roots/>
         </data>
