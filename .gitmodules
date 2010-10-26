@@ -1,6 +1,3 @@
 [submodule "Java-OPeNDAP"]
 	path = Java-OPeNDAP
 	url = git@github.com:asascience/Java-OPeNDAP.git
-[submodule "THREDDS"]
-	path = THREDDS
-	url = git@github.com:asascience/THREDDS.git
