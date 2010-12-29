@@ -1,72 +1,45 @@
-These are NetBeans projects for running ToolsUI and THREDDS.
-It also contains projects for the Java-OPeNDAP libraries as well as the NetCDF-Java libraries
+These are NetBeans projects for running ToolsUI and TDS.
 
-How to get setup?
+Since the NetCDF-Java libraries moved to Maven, this process has gotten much easier.
 
 Clone this repository:
-git clone git@github.com:asascience/ToolsUI.git
+]$ git clone git@github.com:asascience/ToolsUI.git
+]$ cd ToolsUI
 
-Initialize the submodules (Java-OPeNDAP and THREDDS)
-git submodule update
+Initialize the submodule (THREDDS)
+]$ git submodule update
 
-Load the three projects into NetBeans:
-netcdf-4.x
-opendap-2.2
-toolsUI-4.x
-tds-4.x
+You must install Apache Maven (tested with 2.2.1) to procede.  Once it is installed:
+]$ cd THREDDS
+]$ mvn install
 
+Watch the text fly by...
 
-Getting opendap-2.2 to build:
+When that completes, load the following projects into NetBeans:
+* Maven project ./ToolsUI/THREDDS/
+* NetBeans project ./ToolsUI/TDS project
+* NetBeans project ./ToolsUI/ToolsUI project
 
-Edit the opendap-2.2 project properties (right click on project... Properties)
-Under Sources, remove all references and add the following folders (your absolute path to the ToolsUI folder may be different):
-/foo/bar/ToolsUI/Java-OPeNDAP/src/opendap
+Edit the TDS project properties (right click on the TDS project... left click Properties)
 
-You should not have to alter the libraries, they are hopefully
-referenced relatively.
+Remove all "Source Package Folders" references and add the following folders (your absolute path to the ToolsUI folder may be different):
+/foo/bar/ToolsUI/THREDDS/tds/src/main/java
 
-opendap-2.2 should now build correctly!
+Remove all "Test Package Folders" references and add the following folders (your absolute path to the ToolsUI folder may be different):
+/foo/bar/ToolsUI/THREDDS/tds/src/test/java
 
-
-
-Getting netcdf-4.x to build:
-
-Download jpeg2000.jar and move it to (your absolute path to the ToolsUI folder may be different):
-/foo/bar/ToolsUI/THREDDS/lib/external/
-
-Edit the netcdf-4.x project properties (right click on project... Properties)
-Under Sources, remove all references and add the following folders (your absolute path to the ToolsUI folder may be different):
-/foo/bar/ToolsUI/THREDDS/common/src/java
-/foo/bar/ToolsUI/THREDDS/cdm/src/main/java
-/foo/bar/ToolsUI/THREDDS/cdm/src/main/resources
-
-You should not have to alter the libraries, they are hopefully
-referenced relatively.
-
-netcdf-4.x should now build correctly!
+Press OK to close the dialog
 
 
+Edit the ToolsUI project properties (right click on the ToolsUI project... left click Properties)
 
-Getting toolsUI-4.x to build:
-
-Edit the toolsUI-4.x project propderties (right click on project... Properties)
-Under Sources, remove all references and add the following folders (your absolute path to the ToolsUI folder may be different):
+Remove all "Source Package Folders" references and add the following folders (your absolute path to the ToolsUI folder may be different):
 /foo/bar/ToolsUI/THREDDS/ui/src/main/java
 /foo/bar/ToolsUI/THREDDS/ui/src/main/resources
 
-You should not have to alter the libraries, they are hopefully referenced relatively.
-
-toolsUI-4.x should now build correctly!
+Press OK to close the dialog
 
 
+Once NetBeans finishes scanning projects and whatever else it does after you change the project settings...
 
-Getting tds-4.x to build:
-
-Edit the tds-4.x project properties (right click on project... Properties)
-Under Sources, remove all references and add the following folders (your absolute path to the ToolsUI folder may be different):
-/foo/bar/ToolsUI/THREDDS/tds/src/main/java
-
-You should not have to alter the libraries, they are hopefully
-referenced relatively.
-
-tds-4.x should now build correctly!
+Both TDS and ToolsUI should now Build and Run!

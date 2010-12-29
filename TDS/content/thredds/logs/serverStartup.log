@@ -1,0 +1,39 @@
+2010-12-29T14:09:55.086-0500 [      1045][       1] serverStartup: TdsConfigContextListener.contextInitialized() start[2]: Non-request thread opening.
+2010-12-29T14:09:55.102-0500 [      1061][       1] serverStartup: CdmInit: FeatureCollection.cacheDirectory= C:\Dev\NetCDF\ToolsUI\tds-4.x\content\thredds/cache/collection/
+2010-12-29T14:09:55.445-0500 [      1404][       1] serverStartup: CdmInit: ehcache.config= C:\Dev\NetCDF\ToolsUI\tds-4.x\build\web/WEB-INF/ehcache.xml directory= C:\Dev\NetCDF\ToolsUI\tds-4.x\content\thredds/cache/ehcache/
+2010-12-29T14:09:55.476-0500 [      1435][       1] serverStartup: CdmInit: catalogWriting.useBytesForDataSize= false
+2010-12-29T14:09:55.695-0500 [      1654][       1] serverStartup: CdmInit: NetcdfDataset.initNetcdfFileCache= [200,400] scour = 600
+2010-12-29T14:09:55.695-0500 [      1654][       1] serverStartup: CdmInit: HTTPFileCache.initCache= [25,40] scour = 600
+2010-12-29T14:09:55.710-0500 [      1669][       1] serverStartup: CdmInit: GridServiceProvider.IndexExtendMode= readonly
+2010-12-29T14:09:55.710-0500 [      1669][       1] serverStartup: CdmInit: GribIndexing.alwaysUseCache= false
+2010-12-29T14:09:55.726-0500 [      1685][       1] serverStartup: CdmInit:  AggregationCache= C:\Dev\NetCDF\ToolsUI\tds-4.x\content\thredds\cache\agg scour = 86400 maxAgeSecs = 7776000
+2010-12-29T14:09:55.726-0500 [      1685][       1] serverStartup: CdmInit: Aggregation.setTypicalDatasetMode= penultimate
+2010-12-29T14:09:55.726-0500 [      1685][       1] serverStartup: CdmInit:  CdmCache= C:\Dev\NetCDF\ToolsUI\tds-4.x\content\thredds\cache\cdm scour = 3600 maxSize = 1000000000
+2010-12-29T14:09:55.726-0500 [      1685][       1] serverStartup: CdmInit complete
+2010-12-29T14:09:55.726-0500 [      1685][       1] serverStartup: TdsConfigContextListener: CdmInit done
+2010-12-29T14:09:56.147-0500 [      2106][       1] serverStartup: TdsConfigContextListener: DataRootHandler done
+2010-12-29T14:09:56.147-0500 [      2106][       1] serverStartup: TdsConfigContextListener.contextInitialized(): done - Non-request thread closing - 1061
+2010-12-29T14:09:56.709-0500 [      2668][       2] serverStartup: CatalogGen - initialize start - Non-request thread opening.
+2010-12-29T14:09:56.709-0500 [      2668][       2] serverStartup: CatalogGen not enabled in threddsConfig.xml - Non-request thread closing - 0
+2010-12-29T14:09:56.756-0500 [      2715][       3] serverStartup: DQC Service - init start - Non-request thread opening.
+2010-12-29T14:09:56.756-0500 [      2715][       3] serverStartup: Dqc Service not enabled in threddsConfig.xml - Non-request thread closing - 0
+2010-12-29T14:09:56.787-0500 [      2746][       4] serverStartup: thredds.server.wcs.WCSServlet initialization start -  Non-request thread opening.
+2010-12-29T14:09:56.787-0500 [      2746][       4] serverStartup: WCS:allow= false
+2010-12-29T14:09:56.787-0500 [      2746][       4] serverStartup: WCS service not enabled in threddsConfig.xml: Non-request thread closing - 0
+2010-12-29T14:09:56.834-0500 [      2793][       5] serverStartup: thredds.server.opendap.OpendapServlet initialization start - Non-request thread opening.
+2010-12-29T14:09:56.834-0500 [      2793][       5] serverStartup: thredds.server.opendap.OpendapServlet version= opendap/3.7 ascLimit = 50 binLimit = 500
+2010-12-29T14:09:56.834-0500 [      2793][       5] serverStartup: thredds.server.opendap.OpendapServlet initialization done - Non-request thread closing - 0
+2010-12-29T14:09:57.239-0500 [      3198][       6] serverStartup: thredds.servlet.FmrcInventoryServlet initialization start -  Non-request thread opening.
+2010-12-29T14:09:57.239-0500 [      3198][       6] serverStartup: thredds.servlet.FmrcInventoryServlet initialization done -  Non-request thread closing - 0
+2010-12-29T14:09:57.255-0500 [      3214][       7] serverStartup: thredds.servlet.ViewServlet initialization start -  Non-request thread opening.
+2010-12-29T14:09:57.255-0500 [      3214][       7] serverStartup: thredds.servlet.ViewServlet initialization done -  Non-request thread closing - 0
+2010-12-29T14:09:57.255-0500 [      3214][       8] serverStartup: thredds.servlet.DLwriterServlet initialization start -  Non-request thread opening.
+2010-12-29T14:09:57.255-0500 [      3214][       8] serverStartup: DLwriterServlet.init(): DLwriter service not enabled in threddsConfig.xml: Non-request thread closing - 0
+2010-12-29T14:10:31.222-0500 [     37181][      16] serverStartup: CatalogGen - destroy start - Non-request thread opening.
+2010-12-29T14:10:31.222-0500 [     37181][      16] serverStartup: CatalogGen - destroy done - Non-request thread closing - 0
+2010-12-29T14:10:31.238-0500 [     37197][      17] serverStartup: DQC Service - destroy start - Non-request thread opening.
+2010-12-29T14:10:31.238-0500 [     37197][      17] serverStartup: DQC Service - destroy done - Non-request thread closing - 0
+2010-12-29T14:10:31.238-0500 [     37197][      18] serverStartup: WCSServlet.destroy() start: Non-request thread opening.
+2010-12-29T14:10:31.238-0500 [     37197][      18] serverStartup: WCSServlet.destroy() done:Non-request thread closing - 0
+2010-12-29T14:10:31.238-0500 [     37197][      19] serverStartup: TdsConfigContextListener.contextDestroyed(): start.Non-request thread opening.
+2010-12-29T14:10:31.253-0500 [     37212][      19] serverStartup: TdsConfigContextListener.contextDestroyed(): Done except for shutdownLogging() - Non-request thread closing - 15
