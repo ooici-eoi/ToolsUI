@@ -1,15 +1,18 @@
 These are NetBeans projects for running ToolsUI and TDS.
-
 Since the NetCDF-Java libraries moved to Maven, this process has gotten much easier.
+
+You will need both the "Maven" and "Java Web and EE" ("Java Web Applications") plugins for NetBeans.
+You will need OS packages for "git" and Apache Maven (tested with 2.2.1).  For Windows, use msysgit.
 
 Clone this repository:
 ]$ git clone git@github.com:asascience/ToolsUI.git
 ]$ cd ToolsUI
 
-Initialize the submodule (THREDDS)
+Initialize and update the submodule (THREDDS)
+]$ git submodule init
 ]$ git submodule update
 
-You must install Apache Maven (tested with 2.2.1) to procede.  Once it is installed:
+Mavenize THREDDS:
 ]$ cd THREDDS
 ]$ mvn install
 
@@ -17,29 +20,16 @@ Watch the text fly by...
 
 When that completes, load the following projects into NetBeans:
 * Maven project ./ToolsUI/THREDDS/
-* NetBeans project ./ToolsUI/TDS project
-* NetBeans project ./ToolsUI/ToolsUI project
+* Java Web project ./ToolsUI/TDS project
+* Java App project ./ToolsUI/ToolsUI project
+
 
 Edit the TDS project properties (right click on the TDS project... left click Properties)
-
-Remove all "Source Package Folders" references and add the following folders (your absolute path to the ToolsUI folder may be different):
-/foo/bar/ToolsUI/THREDDS/tds/src/main/java
-
-Remove all "Test Package Folders" references and add the following folders (your absolute path to the ToolsUI folder may be different):
-/foo/bar/ToolsUI/THREDDS/tds/src/test/java
-
+While on the "Sources" page (left navigation), Change the paths of "Web Pages Folder" and "WEB-INF Folder" to point to your local copies of the folders.
 Press OK to close the dialog
-
 
 Edit the ToolsUI project properties (right click on the ToolsUI project... left click Properties)
-
-Remove all "Source Package Folders" references and add the following folders (your absolute path to the ToolsUI folder may be different):
-/foo/bar/ToolsUI/THREDDS/ui/src/main/java
-/foo/bar/ToolsUI/THREDDS/ui/src/main/resources
-
+Go to the "Run" page (left navigation).  Change the "Working Directory" to point to your local copy of "./ToolsUI/THREDDS/ui/src/main/resources"
 Press OK to close the dialog
 
-
-Once NetBeans finishes scanning projects and whatever else it does after you change the project settings...
-
-Both TDS and ToolsUI should now Build and Run!
+You should now be able to Clean, Build, then Run TDS and ToolsUI.
