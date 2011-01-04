@@ -5,7 +5,7 @@ You will need both the "Maven" and "Java Web and EE" ("Java Web Applications") p
 You will need OS packages for "git" and Apache Maven (tested with 2.2.1).  For Windows, use msysgit.
 
 Clone this repository:
-]$ git clone git@github.com:asascience/ToolsUI.git
+]$ git clone git://github.com/asascience/ToolsUI.git
 ]$ cd ToolsUI
 
 Initialize and update the submodule (THREDDS)
