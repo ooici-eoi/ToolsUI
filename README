@@ -18,6 +18,10 @@ Mavenize THREDDS:
 
 Watch the text fly by...
 
+As of today (1/24/10), you also need to build opendap 2.2 using ant.  The opendap that is build with maven causes compilation issues.
+]$ cd opendap
+]$ ant "opendap-lib" (you may need to install Apache Ant)
+
 When that completes, load the following projects into NetBeans:
 * Maven project ./ToolsUI/THREDDS/
 * Java Web project ./ToolsUI/TDS project
