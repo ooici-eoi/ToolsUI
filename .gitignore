@@ -1,3 +1,11 @@
+######################
+# OS generated files #
+######################
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
+
 */dist/*
 */build/*
 tds-4.x/content/*
