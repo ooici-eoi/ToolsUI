@@ -9,3 +9,6 @@ Thumbs.db
 */dist/*
 */build/*
 tds-4.x/content/*
+/ToolsUI/nbproject/private/
+/TDS/nbproject/private/
+/TDS/content/thredds/
